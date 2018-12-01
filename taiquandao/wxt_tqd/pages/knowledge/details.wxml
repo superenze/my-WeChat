@@ -1,0 +1,12 @@
+<!--pages/knowledge/details.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="content">
+<view class="title">{{list[0].title}}</view>
+<wxs src="../../utils/filter.wxs" module="dateT" />
+<view class="time">{{dateT.getTime(list[0].time)}}<text class="read"> 阅读 {{list[0].num}}</text></view>
+<view class="mt"></view>
+<template is="wxParse" data="{{wxParseData:text.nodes}}"/>
+<!-- <view class="txt">
+   {{list[0].text}}
+</view> -->
+</view>

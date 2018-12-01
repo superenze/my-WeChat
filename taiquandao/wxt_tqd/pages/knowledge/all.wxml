@@ -1,0 +1,20 @@
+<!--pages/knowledge/all.wxml-->
+<view class="nav">
+  <view class="{{id==index?'navact':'navt'}}" wx:for="{{navlist}}" wx:key="index" data-index="{{index}}" bindtap='go'>{{item}}</view>
+</view>
+<view class="wt">
+ <block wx:for="{{list}}" wx:key="item.id"  >
+  <view class="content" catchtap='godetails' data-id="{{item.id}}">
+    <view class="text">
+      <view class="line1">{{item.text1}}</view>
+      <view class="line2">{{item.text2}}</view>
+      <wxs src="../../utils/filter.wxs" module="dateFr" />
+      <view class="line3">{{dateFr.getDate(item.time,'-')}}</view>     
+    </view>
+    <view>
+      <image src="{{item.img}}" mode="aspectFill" lazy-load></image>
+    </view>
+  </view>
+  <view class="bb"></view>
+ </block>
+</view>

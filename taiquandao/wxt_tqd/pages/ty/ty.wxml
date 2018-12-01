@@ -1,0 +1,25 @@
+<!--pages/ty/ty.wxml-->
+<view class="sub">
+  <view class="mt"></view>
+  <text class="tit">姓名：</text>
+  <input type="text" class="uname" bindinput="getname"></input>
+  <text class="tit">电话：</text>
+  <input type='text' class="phone" bindinput="getphone"></input>
+  <text class="tit">时间：</text>
+  <input type="text" class="time"  bindinput="gettime"></input>
+  <text class="tit">班级：</text>
+  <radio-group class="rg" bindchange="getclass">
+    <label class="ra"><radio name="class" value="暑假特训班"  />暑假特训班 </label> 
+    <label class="ra"><radio name="class" value="成人晚班" />成人晚班 </label>
+    <label class="ra"><radio name="class" value="少儿后末班" />少儿后末班 </label>
+    <view></view>
+    <label class="ra"><radio name="class" value="黑带教练班"/>黑带教练班 </label>
+  </radio-group>
+  <text class="tit">道馆：</text>
+  <radio-group class="rg" bindchange="getaddr">
+    <label class="ra"><radio name="address" value="天河店" />天河店 </label> 
+    <label class="ra"><radio name="address" value="海珠店" />海珠店 </label>
+    <label class="ra"><radio name="address" value="越秀店" />越秀店 </label>
+  </radio-group>
+  <view class="get" bindtap="click">马上提交</view>
+</view>

@@ -1,0 +1,73 @@
+<!--pages/home/home.wxml-->
+<!-- 轮播图 -->
+<view class="header">
+  <swiper autoplay interval='3000' indicator-dots>
+    <block wx:for="{{list}}" wx:key="item.id">
+      <swiper-item><image src="{{item.img}}" mode="aspectFill" lazy-load></image></swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--  四个图片  -->
+<view class="pic-4">
+  <view class="pic-1" wx:for="{{list2}}" wx:key="item.id">
+    <view class="line-img">
+      <image mode="aspectFill" lazy-load src="{{item.img}}"></image>
+    </view>
+    <view class="line-1">{{item.text1}}</view>
+    <view class="line-2">{{item.text2}}</view>
+  </view>
+</view>
+<!-- 俩个大框 -->
+<view class="about">
+<!-- 免费体验课程 -->
+ <view class="bg-ty"   bindtap="goty">
+ <view class="ty-img">
+      <image src="{{list3[0].img}}" mode="aspectFill" lazy-load></image>
+    </view>
+    <view>{{list3[0].text1}}</view>
+    <view>{{list3[0].text2}}</view>
+ </view>
+ <!-- 关于我们 -->
+ <view class="bg-ty bg-gy" bindtap="goknow">
+    <view class="ty-img">
+      <image src="{{list3[1].img}}" mode="aspectFill" lazy-load></image>
+    </view>
+    <view>{{list3[1].text1}}</view>
+    <view>{{list3[1].text2}}</view>
+ </view>
+</view>
+<!-- 课程 -->
+<view class="ct">
+  <view class="moduleTitle">
+    <text class="left-lines lines"></text>
+    <text class="titleText">课程</text>
+    <text class="right-lines lines"></text>
+  </view>
+  <view class="mutil-graph-swiperC">
+   <view wx:for="{{list4}}" wx:key="item.id">
+    <view class="mutil-graph-swiper-r">
+      <image src="{{item.img}}" mode="aspectFill" lazy-load></image>
+    </view>
+      <view class="kt">
+        <view>{{item.text1}}</view>
+        <view>{{item.text2}}</view>
+      </view>
+    </view>
+  </view>  
+</view>
+<!-- 教学资料 -->
+<view class="material">
+  <view class="text-1"><text class="lt">教学资料</text><text class="rb" bindtap='goAll'>查看全部<text class="lr"></text></text></view>
+  <view class="know">
+    <view class="txt" wx:for="{{list5}}" wx:key="{{index}}" catchtap='godetails' data-id="{{item.id}}">
+      <image src="{{item.img}}"  mode="aspectFill" lazy-load></image>
+      <view></view>
+      <view class="txt">
+        <text class="t1">{{item.text1}}</text>
+        <view></view>
+        <text class="t2">{{item.text2}}</text>
+      </view>
+    </view>
+    <!--  -->
+  </view>
+</view>

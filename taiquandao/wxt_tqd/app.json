@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/knowledge/all",
+    "pages/knowledge/details",
+    "pages/knowledge/knowledge",
+    "pages/video/video",
+    "pages/exercises/exe",
+    "pages/exercises/exercises",
+    "pages/ty/ty",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "跆拳道",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "img/000002.png",
+        "selectedIconPath": "img/000004.png"
+      },
+      {
+        "pagePath": "pages/exercises/exercises",
+        "text": "训练计划",
+        "iconPath": "img/0000012.png",
+        "selectedIconPath": "img/0000014.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "看视频",
+        "iconPath": "img/0000032.png",
+        "selectedIconPath": "img/0000034.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "涨知识",
+        "iconPath": "img/0000022.png",
+        "selectedIconPath": "img/0000024.png"
+      }
+    ]
+  }
+}

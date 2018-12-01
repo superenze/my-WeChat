@@ -1,0 +1,47 @@
+//filter.wxs
+var DateFr = {
+  getDate: function (time, splitStr) {
+    if (!time) return '';
+    var date = getDate(time);
+    var M = date.getMonth() + 1;
+    var y = date.getFullYear();
+    var d = date.getDate();
+    if (M < 10) M = "0" + M;
+    if (d < 10) d = "0" + d;
+    if (splitStr)
+      return y + splitStr + M + splitStr + d;
+    else
+      return {
+        y: y,
+        M: M,
+        d: d
+      };
+  }
+}
+
+var DateT = {
+  getDate: function (time) {
+    if (!time) return '';
+    var date = getDate(time);
+    var M = date.getMonth() + 1;
+    var y = date.getFullYear();
+    var d = date.getDate();
+    var t = date.getHours();
+    var mins = date.getMinutes();
+    var s = date.getSeconds();
+    if (M < 10) M = "0" + M;
+    if (d < 10) d = "0" + d;
+    t < 10 && (t = "0" + t);
+    mins < 10 && (mins = "0" + mins);
+    s < 10 && (s = "0" + s);
+    return y + "-" + M + "-" + d+" "+t+":"+mins+":"+s;
+    
+  }
+}
+
+
+
+module.exports = {
+  getDate: DateFr.getDate,
+  getTime: DateT.getDate
+}

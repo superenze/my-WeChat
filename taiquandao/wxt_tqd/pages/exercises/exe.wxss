@@ -1,0 +1,15 @@
+/* pages/exercises/exe.wxss */
+.top{
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    margin-top:50rpx;
+    margin-left:50rpx;
+}
+.nav{
+  margin-bottom: 50rpx;
+}
+.content{
+  margin-left:50rpx;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+}

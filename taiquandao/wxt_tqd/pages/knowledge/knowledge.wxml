@@ -1,0 +1,30 @@
+<!--pages/knowledge/knowledge.wxml-->
+<view class="p">
+  <text class="tq">跆拳道</text>
+  <text class="tq1">（韩文：태권도，英文：TAEKWONDO）</text>  
+  <view></view>
+  <text class="tq2">是朝鲜半岛较普遍流行的一项技击术，是一项运用手脚技术进行格斗的韩民族传统的体育项目。 跆拳道由品势（特尔）、搏击、击破、特技、跆拳舞等五部分内容组成。跆拳道是创新与发展起来的一门独特武术，具有较高的防身自卫及强壮体魄的实用价值。</text>
+</view>
+<view class="know">
+    跆拳道知识
+    <view class="rtf">
+    <text class="rl" bindtap="goAll">查看全部</text>
+    </view>
+</view>
+<view class="bt">
+ <!--  -->
+ <view wx:for="{{list}}" wx:key="item.id">
+  <view class="content">
+    <view class="text">
+      <view class="line1">{{item.text1}}</view>
+      <view class="line2">{{item.text2}}</view>
+      <wxs src="../../utils/filter.wxs" module="dateFr" />
+      <view class="line3">{{dateFr.getDate(item.time,'-')}}</view>     
+    </view>
+    <view>
+      <image src="{{item.img}}" mode="aspectFill" lazy-load></image>
+    </view>
+  </view>
+  <view class="bb"></view>
+ </view>
+</view>

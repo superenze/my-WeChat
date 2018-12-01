@@ -1,0 +1,12 @@
+<!--pages/video/video.wxml-->
+<view class="moduleTitle">
+    <text class="left-lines lines"></text>
+    <text class="titleText">教学视频</text>
+    <text class="right-lines lines"></text>
+</view>
+<view class="video" wx:for="{{list}}" wx:key="item.id" >
+  <video src="{{item.video}}" controls wx:if="list.length>0?true:false"></video>
+</view>
+<view>
+    <view wx:if="{{!hasMore}}" class="hasMore">已经没有更多数据了</view>
+</view>

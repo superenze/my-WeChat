@@ -1,0 +1,20 @@
+/* pages/knowledge/details.wxss */
+.title{
+  font-size:18px;
+  font-weight: 900;
+}
+.content{
+  margin-top:50rpx;
+  padding:0 30rpx;
+}
+.time{
+  margin-top:10rpx;
+  font-size: 11px;
+  color: #afb1af;
+}
+.read{
+  margin-left:10rpx;
+}
+.mt{
+  margin-top:30rpx;
+}

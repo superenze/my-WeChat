@@ -1,0 +1,24 @@
+<!--pages/exercises/exercises.wxml-->
+<view class="nav">
+  <image src="{{nav[0].img}}" mode="aspectFill" lazy-load></image>
+  <view class="text1">{{nav[0].text1}}</view>
+  <view class="text2">{{nav[0].text2}}</view>
+</view>
+
+<view wx:for="{{list}}" wx:key="item.id" wx:for-index="index">
+  <view class="one" wx:if="{{index%2==0}}">
+    <image src="{{item.img}}"  mode="aspectFill" lazy-load></image>
+    <view class="{{index==0?'line1':'line1w'}}">{{item.text1}}</view>
+    <view class="{{index==0?'line2':'line2w'}}">{{item.text2}}</view>
+    <view class="{{index==0?'line3':'line3w'}}" bindtap="click">{{item.text3}}</view>
+  </view>
+  <view class="one" wx:else>
+    <image src="{{item.img}}" mode="aspectFill" lazy-load></image>
+    <view class="{{index==5?'linel1':'liner1'}}">{{item.text1}}</view>
+    <view class="liner2" wx:if="{{item.text2=='null'?false:true}}">{{item.text2}}</view>
+    <view class="liner3" bindtap="click">{{item.text3}}</view>
+  </view>
+</view>
+
+  
+

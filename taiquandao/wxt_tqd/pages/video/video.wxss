@@ -1,0 +1,9 @@
+/* pages/video/video.wxss */
+.video{
+  padding:70rpx;
+}
+.hasMore{
+  margin: 0 auto;
+  text-align: center;
+  color:#ccc;
+}

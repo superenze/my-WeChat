@@ -1,0 +1,123 @@
+/* pages/exercises/exercises.wxss */
+.nav{
+  position: relative;
+}
+.nav image{
+  width: 100%;
+  height: 200rpx;
+}
+.text1{
+   position: absolute;
+   top:50rpx;
+   left:23%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+.text2{
+  position: absolute;
+   top:120rpx;
+   left:23%;
+   font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 19px;
+}
+.one{
+  margin-top: 10rpx;
+  position: relative;
+
+}
+.one image{
+  width: 100%;
+  height: 300rpx;
+}
+.line1{
+  position: absolute;
+  top:70rpx;
+  left:70rpx;
+  font-size: 18px;
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+}
+.line2{
+  position: absolute;
+  top:120rpx;
+  left:70rpx;
+  font-size: 18px;
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+}
+.line3{
+  position: absolute;
+  bottom:80rpx;
+  left:70rpx;
+  font-size: 12px;
+  color: rgb(159, 154, 132);
+  text-decoration: underline;
+  line-height: 17px;
+}
+.line1w{
+  position: absolute;
+  top:70rpx;
+  left:70rpx;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+.line2w{
+  position: absolute;
+  top:120rpx;
+  left:70rpx;
+  font-size: 18px;
+  color:#fff;
+  font-weight: bold;
+}
+.line3w{
+  position: absolute;
+  bottom:80rpx;
+  left:70rpx;
+  font-size: 12px;
+  color:#fff;
+  text-decoration: underline;
+  line-height: 17px;
+}
+.liner1{
+  position: absolute;
+  top:80rpx;
+  right:70rpx;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 23px;
+}
+.liner2{
+  position: absolute;
+  top:130rpx;
+  right:48rpx;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 23px;
+}
+.liner3{
+  position: absolute;
+  bottom:70rpx;
+  right:70rpx;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  line-height: 17px;
+}
+.linel1{
+position:absolute;
+top:80rpx;
+right:33rpx;
+font-size:18px;
+color:rgb(255, 255, 255);
+font-weight:bold;
+line-height:23px;
+
+}

@@ -1,0 +1,29 @@
+<!--pages/exercises/exe.wxml-->
+<view class="nav">
+    <view class="top">十级 白带 九级 白黄带（白带）</view>
+    <view class="content">1 礼仪（国旗敬礼 师生敬礼 道服穿着等）</view>
+    <view class="content">2 热身练习方法：颈部拉伸 、屈膝弯曲、大腿内侧和髋关节拉伸 、压腿 、左右腿和背拉伸 、大腿和背拉伸 、腰和髋拉伸</view>
+    <view class="content">3 步行：开立步 马步 换步</view>
+    <view class="content">4 拳、掌、指法练习</view>
+    <view class="content">5 站立势与高马步势冲拳</view>
+    <view class="content">6 步法：前后滑步、上步、前滑步+上步、左右滑步</view>
+    <view class="content">7 腿法：前踢、横踢、下劈腿</view>
+    <view class="content">8 品势：太极一章 基本技术运用</view>
+    <view class="content">9 体能练习方法：a仰卧起坐6个</view>
+    <view class="content">b俯卧撑 6 个</view>
+    <view class="content">c折返跑 8个</view>
+    <view class="content">d高抬腿 40个</view>
+</view>
+<view>
+    <view class="top">八级 黄带</view>
+    <view class="content">1 柔韧：横叉、左右竖叉</view>
+    <view class="content">2 基本动作：</view>
+    <view class="content">a基本步行：走步、弓步、马步</view>
+    <view class="content">b基本防守：上格挡、中格挡、下格挡</view>
+    <view class="content">3 腿法：</view>
+    <view class="content">a固定腿法：左右前踢、左右横踢</view>
+    <view class="content">b移动腿法：前滑步前踢、前滑步横踢、前滑步下腿、旋风踢基础动作</view>
+    <view class="content">4 品势：太极二章 基本技术运用</view>
+    <view class="content">5 体能练习：a仰卧起坐（男15个、女8个、儿童6个）</view>
+    <view class="content">b俯卧撑 （男10个、女6个、儿童4个） c双腿提膝（左右各10次）</view>
+</view>
